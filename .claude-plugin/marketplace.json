@@ -130,7 +130,7 @@
     },
     {
       "name": "tool-usage-logger",
-      "source": "./tool-logger",
+      "source": "./hooks/tool-logger",
       "description": "PostToolUse hook that logs all tool usage for tracking and debugging purposes",
       "version": "1.0.0",
       "author": {
@@ -159,7 +159,7 @@
     },
     {
       "name": "mcp-essentials",
-      "source": "./mcp/essentials",
+      "source": ".",
       "description": "Essential MCP servers for web fetching, time operations, and IDE integration",
       "version": "1.0.0",
       "author": {
@@ -189,7 +189,7 @@
     },
     {
       "name": "mcp-ai-tools",
-      "source": "./mcp/ai-tools",
+      "source": ".",
       "description": "AI-powered MCP servers including Serena planning assistant and Gemini bridge",
       "version": "1.0.0",
       "author": {
@@ -202,23 +202,6 @@
       "keywords": ["mcp", "ai", "planning", "gemini"],
       "category": "mcp-servers",
       "mcpServers": {
-        "serena": {
-          "type": "stdio",
-          "command": "uvx",
-          "args": [
-            "--from",
-            "git+https://github.com/oraios/serena",
-            "serena",
-            "start-mcp-server",
-            "--context",
-            "ide-assistant",
-            "--mode",
-            "planning",
-            "--enable-web-dashboard",
-            "FALSE"
-          ],
-          "env": {}
-        },
         "gemini-bridge": {
           "type": "stdio",
           "command": "uvx",
@@ -230,7 +213,7 @@
     },
     {
       "name": "mcp-data-sources",
-      "source": "./mcp/data-sources",
+      "source": ".",
       "description": "Data and API MCP servers for weather, crypto, stocks, and workspace integration",
       "version": "1.0.0",
       "author": {
@@ -278,6 +261,37 @@
           "type": "http",
           "url": "https://mcp.alphavantage.co/mcp?apikey=${ALPHAVANTAGEAPIKEY}"
         },
+        "google_workspace": {
+          "command": "uvx",
+          "args": ["workspace-mcp"],
+          "env": {
+            "GOOGLE_OAUTH_CLIENT_ID": "${GOOGLE_OAUTH_CLIENT_ID}",
+            "GOOGLE_OAUTH_CLIENT_SECRET": "${GOOGLE_OAUTH_CLIENT_SECRET}",
+            "OAUTHLIB_INSECURE_TRANSPORT": "1"
+          }
+        },
+        "notion": {
+          "type": "http",
+          "url": "https://mcp.notion.com/mcp"
+        }
+      },
+      "strict": false
+    },
+    {
+      "name": "mcp-dev-tools",
+      "source": ".",
+      "description": "Development and automation tools including Chrome DevTools, n8n, and network management",
+      "version": "1.0.0",
+      "author": {
+        "name": "Henrik Soederlund",
+        "email": "whom-wealthy.2z@icloud.com"
+      },
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
+      "license": "MIT",
+      "keywords": ["mcp", "devtools", "automation", "network"],
+      "category": "mcp-servers",
+      "mcpServers": {
         "context7": {
           "command": "npx",
           "args": [
@@ -294,19 +308,6 @@
             "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
           }
         },
-        "google_workspace": {
-          "command": "uvx",
-          "args": ["workspace-mcp"],
-          "env": {
-            "GOOGLE_OAUTH_CLIENT_ID": "${GOOGLE_OAUTH_CLIENT_ID}",
-            "GOOGLE_OAUTH_CLIENT_SECRET": "${GOOGLE_OAUTH_CLIENT_SECRET}",
-            "OAUTHLIB_INSECURE_TRANSPORT": "1"
-          }
-        },
-        "notion": {
-          "type": "http",
-          "url": "https://mcp.notion.com/mcp"
-        },
         "cloudflare-docs": {
           "command": "npx",
           "args": ["mcp-remote", "https://docs.mcp.cloudflare.com/sse"]
@@ -314,25 +315,24 @@
         "microsoft_docs": {
           "type": "http",
           "url": "https://learn.microsoft.com/api/mcp"
-        }
-      },
-      "strict": false
-    },
-    {
-      "name": "mcp-dev-tools",
-      "source": "./mcp/dev-tools",
-      "description": "Development and automation tools including Chrome DevTools, n8n, and network management",
-      "version": "1.0.0",
-      "author": {
-        "name": "Henrik Soederlund",
-        "email": "whom-wealthy.2z@icloud.com"
-      },
-      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
-      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
-      "license": "MIT",
-      "keywords": ["mcp", "devtools", "automation", "network"],
-      "category": "mcp-servers",
-      "mcpServers": {
+        },
+        "serena": {
+          "type": "stdio",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/oraios/serena",
+            "serena",
+            "start-mcp-server",
+            "--context",
+            "ide-assistant",
+            "--mode",
+            "planning",
+            "--enable-web-dashboard",
+            "FALSE"
+          ],
+          "env": {}
+        },
         "chrome-devtools": {
           "command": "npx",
           "args": ["chrome-devtools-mcp@latest"]
@@ -361,14 +361,6 @@
             "--port",
             "2200"
           ]
-        },
-        "mcphub": {
-          "type": "http",
-          "url": "https://mcphub.wookstar.com/mcp",
-          "headers": {
-            "CF-Access-Client-Id": "${CF_ACCESS_CLIENT_ID}",
-            "CF-Access-Client-Secret": "${CF_ACCESS_CLIENT_SECRET}"
-          }
         }
       },
       "strict": false
