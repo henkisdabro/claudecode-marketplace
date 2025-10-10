@@ -11,31 +11,71 @@
   },
   "plugins": [
     {
-      "name": "development-utilities",
+      "name": "project-onboarding",
       "source": "./",
-      "description": "Dev tools: Docker, prompts, code reflection",
-      "keywords": ["utilities", "docker", "containerization", "development"],
-      "category": "productivity",
+      "description": "Project initialization and context setup",
+      "keywords": ["onboarding", "context", "initialization", "setup"],
+      "category": "commands",
       "commands": [
-        "./commands/containerize.md",
-        "./commands/prompt_writer.md",
         "./commands/primer.md",
-        "./commands/reflection.md",
         "./commands/create-agentsmd-symlink.md"
       ],
       "strict": false
     },
     {
-      "name": "planning-tools",
+      "name": "prompt-engineering",
       "source": "./",
-      "description": "Advanced planning and thinking tools",
-      "keywords": ["planning", "thinking", "problem-solving", "analysis"],
-      "category": "productivity",
+      "description": "Claude Code prompt and instruction optimization",
+      "keywords": ["prompts", "meta", "claude-md", "optimization", "ai-tooling"],
+      "category": "commands",
+      "commands": [
+        "./commands/prompt_writer.md",
+        "./commands/reflection.md"
+      ],
+      "strict": false
+    },
+    {
+      "name": "infrastructure-tools",
+      "source": "./",
+      "description": "Application containerization and Docker optimization",
+      "keywords": ["docker", "containerization", "deployment", "infrastructure"],
+      "category": "commands",
+      "commands": [
+        "./commands/containerize.md"
+      ],
+      "strict": false
+    },
+    {
+      "name": "strategic-planning",
+      "source": "./",
+      "description": "Feature planning and deep problem analysis",
+      "keywords": ["planning", "analysis", "architecture", "problem-solving"],
+      "category": "commands",
       "commands": [
         "./commands/planning.md",
-        "./commands/ultra-think.md",
+        "./commands/ultra-think.md"
+      ],
+      "strict": false
+    },
+    {
+      "name": "prp-workflow",
+      "source": "./",
+      "description": "PRP-based feature development workflow",
+      "keywords": ["prp", "workflow", "feature-development", "structured-engineering"],
+      "category": "commands",
+      "commands": [
         "./commands/generate-prp.md",
-        "./commands/execute-prp.md",
+        "./commands/execute-prp.md"
+      ],
+      "strict": false
+    },
+    {
+      "name": "experimental-workflows",
+      "source": "./",
+      "description": "Advanced infinite agentic loop for iterative generation",
+      "keywords": ["experimental", "advanced", "iterative", "agentic", "automation"],
+      "category": "commands",
+      "commands": [
         "./commands/infinite.md"
       ],
       "strict": false
@@ -45,7 +85,7 @@
       "source": "./",
       "description": "Execute tasks in parallel for efficiency",
       "keywords": ["parallel", "execution", "performance", "efficiency"],
-      "category": "productivity",
+      "category": "commands",
       "commands": [
         "./commands/prep-parallel.md",
         "./commands/execute-parallel.md"
@@ -84,7 +124,7 @@
       "source": "./",
       "description": "Hook for logging tool usage",
       "keywords": ["logging", "monitoring", "debugging", "hook"],
-      "category": "monitoring",
+      "category": "hooks",
       "hooks": {
         "PostToolUse": [
           {
@@ -105,7 +145,7 @@
       "source": "./",
       "description": "Stock market data",
       "keywords": ["mcp", "stocks", "market-data", "finance"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "alphavantage": {
           "type": "http",
@@ -119,7 +159,7 @@
       "source": "./",
       "description": "Chrome DevTools integration",
       "keywords": ["mcp", "chrome", "devtools", "debugging"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "chrome-devtools": {
           "command": "npx",
@@ -133,7 +173,7 @@
       "source": "./",
       "description": "Cloudflare documentation access",
       "keywords": ["mcp", "cloudflare", "documentation", "docs"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "cloudflare-docs": {
           "command": "npx",
@@ -147,7 +187,7 @@
       "source": "./",
       "description": "Cryptocurrency market data",
       "keywords": ["mcp", "cryptocurrency", "crypto", "market-data"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "coingecko_api": {
           "command": "npx",
@@ -171,7 +211,7 @@
       "source": "./",
       "description": "Context-aware code understanding",
       "keywords": ["mcp", "context", "code-analysis", "upstash"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "context7": {
           "command": "npx",
@@ -190,7 +230,7 @@
       "source": "./",
       "description": "Currency exchange rates",
       "keywords": ["mcp", "currency", "exchange", "forex"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "currency-conversion": {
           "command": "npx",
@@ -204,7 +244,7 @@
       "source": "./",
       "description": "Web content fetching",
       "keywords": ["mcp", "fetch", "web", "http"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "fetch": {
           "command": "uvx",
@@ -218,7 +258,7 @@
       "source": "./",
       "description": "Web crawling and scraping",
       "keywords": ["mcp", "crawling", "scraping", "web"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "firecrawl": {
           "command": "npx",
@@ -235,7 +275,7 @@
       "source": "./",
       "description": "Gemini AI integration",
       "keywords": ["mcp", "gemini", "ai", "google"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "gemini-bridge": {
           "type": "stdio",
@@ -251,7 +291,7 @@
       "source": "./",
       "description": "Google Workspace integration",
       "keywords": ["mcp", "google", "workspace", "gmail", "drive"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "google_workspace": {
           "command": "uvx",
@@ -270,7 +310,7 @@
       "source": "./",
       "description": "Microsoft documentation access",
       "keywords": ["mcp", "microsoft", "documentation", "docs"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "microsoft_docs": {
           "type": "http",
@@ -284,7 +324,7 @@
       "source": "./",
       "description": "MikroTik router management",
       "keywords": ["mcp", "mikrotik", "router", "network"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "mikrotik": {
           "command": "uvx",
@@ -308,7 +348,7 @@
       "source": "./",
       "description": "n8n workflow automation",
       "keywords": ["mcp", "n8n", "automation", "workflows"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "n8n-mcp": {
           "command": "npx",
@@ -329,7 +369,7 @@
       "source": "./",
       "description": "Notion workspace integration",
       "keywords": ["mcp", "notion", "workspace", "notes"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "notion": {
           "type": "http",
@@ -343,7 +383,7 @@
       "source": "./",
       "description": "Weather and climate data",
       "keywords": ["mcp", "weather", "climate", "forecast"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "open-meteo": {
           "command": "npx",
@@ -366,7 +406,7 @@
       "source": "./",
       "description": "Browser automation with Playwright",
       "keywords": ["mcp", "playwright", "browser", "automation"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "playwright": {
           "command": "npx",
@@ -380,7 +420,7 @@
       "source": "./",
       "description": "AI planning and task management",
       "keywords": ["mcp", "ai", "planning", "tasks"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "serena": {
           "type": "stdio",
@@ -407,7 +447,7 @@
       "source": "./",
       "description": "Time and timezone utilities",
       "keywords": ["mcp", "time", "timezone", "datetime"],
-      "category": "mcp-servers",
+      "category": "mcpServers",
       "mcpServers": {
         "time": {
           "command": "uvx",

@@ -307,3 +307,4 @@ When team members trust the repository, plugins install automatically.
 - **CLAUDE.md** (this file): Quick reference for Claude Code instances
 
 When making changes to plugins, consider whether documentation needs updating to reflect new functionality or changed behavior.
+In marketplace.json: Plugin entries "category" entry, can only have a value of either "commands", "agents", "hooks", "mcpServers"
