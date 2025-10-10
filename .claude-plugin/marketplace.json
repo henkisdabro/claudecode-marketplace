@@ -8,12 +8,12 @@
     "description": "A comprehensive collection of Claude Code plugins including development utilities, planning tools, agents, hooks, and MCP server configurations",
     "version": "1.0.0",
     "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
-    "pluginRoot": "./plugins"
+    "pluginRoot": "."
   },
   "plugins": [
     {
       "name": "development-utilities",
-      "source": "./plugins/development-utilities",
+      "source": "./development-utilities",
       "description": "Essential development utilities including containerization, prompt writing, and code reflection tools",
       "version": "1.0.0",
       "author": {
@@ -34,7 +34,7 @@
     },
     {
       "name": "planning-tools",
-      "source": "./plugins/planning-tools",
+      "source": "./planning-tools",
       "description": "Advanced planning and thinking tools for complex problem-solving and systematic planning",
       "version": "1.0.0",
       "author": {
@@ -55,7 +55,7 @@
     },
     {
       "name": "parallel-execution",
-      "source": "./plugins/parallel-execution",
+      "source": "./parallel-execution",
       "description": "Tools for preparing and executing tasks in parallel for improved efficiency",
       "version": "1.0.0",
       "author": {
@@ -73,7 +73,7 @@
     },
     {
       "name": "fullstack-developer",
-      "source": "./plugins/agents/fullstack-developer",
+      "source": "./agents/fullstack-developer",
       "description": "Full-stack development specialist agent covering frontend, backend, and database technologies",
       "version": "1.0.0",
       "author": {
@@ -88,7 +88,7 @@
     },
     {
       "name": "documentation-manager",
-      "source": "./plugins/agents/documentation-manager",
+      "source": "./agents/documentation-manager",
       "description": "Expert documentation specialist for maintaining comprehensive technical documentation",
       "version": "1.0.0",
       "author": {
@@ -103,7 +103,7 @@
     },
     {
       "name": "validation-gates",
-      "source": "./plugins/agents/validation-gates",
+      "source": "./agents/validation-gates",
       "description": "Testing and validation specialist that proactively runs tests and ensures quality gates are met",
       "version": "1.0.0",
       "author": {
@@ -118,7 +118,7 @@
     },
     {
       "name": "tool-usage-logger",
-      "source": "./plugins/hooks/tool-logger",
+      "source": "./hooks/tool-logger",
       "description": "PostToolUse hook that logs all tool usage for tracking and debugging purposes",
       "version": "1.0.0",
       "author": {
@@ -145,7 +145,7 @@
     },
     {
       "name": "mcp-essentials",
-      "source": "./plugins/mcp-collections/essentials",
+      "source": "./mcp-collections/essentials",
       "description": "Essential MCP servers for web fetching, time operations, and IDE integration",
       "version": "1.0.0",
       "author": {
@@ -173,7 +173,7 @@
     },
     {
       "name": "mcp-ai-tools",
-      "source": "./plugins/mcp-collections/ai-tools",
+      "source": "./mcp-collections/ai-tools",
       "description": "AI-powered MCP servers including Serena planning assistant and Gemini bridge",
       "version": "1.0.0",
       "author": {
@@ -212,7 +212,7 @@
     },
     {
       "name": "mcp-data-sources",
-      "source": "./plugins/mcp-collections/data-sources",
+      "source": "./mcp-collections/data-sources",
       "description": "Data and API MCP servers for weather, crypto, stocks, and workspace integration",
       "version": "1.0.0",
       "author": {
@@ -300,7 +300,7 @@
     },
     {
       "name": "mcp-dev-tools",
-      "source": "./plugins/mcp-collections/dev-tools",
+      "source": "./mcp-collections/dev-tools",
       "description": "Development and automation tools including Chrome DevTools, n8n, and network management",
       "version": "1.0.0",
       "author": {
