@@ -20,9 +20,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "productivity",
-      "keywords": ["utilities", "docker", "containerization", "development"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["utilities", "docker", "containerization", "development"],
+      "category": "productivity",
       "commands": [
         "./containerize.md",
         "./prompt_writer.md",
@@ -41,9 +43,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "productivity",
-      "keywords": ["planning", "thinking", "problem-solving", "analysis"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["planning", "thinking", "problem-solving", "analysis"],
+      "category": "productivity",
       "commands": [
         "./planning.md",
         "./ultra-think.md",
@@ -62,9 +66,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "productivity",
-      "keywords": ["parallel", "execution", "performance", "efficiency"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["parallel", "execution", "performance", "efficiency"],
+      "category": "productivity",
       "commands": [
         "./prep-parallel.md",
         "./execute-parallel.md"
@@ -80,9 +86,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "agents",
-      "keywords": ["fullstack", "development", "react", "nodejs", "database", "agent"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["fullstack", "development", "react", "nodejs", "database", "agent"],
+      "category": "agents",
       "agents": ["./fullstack-developer.md"],
       "strict": false
     },
@@ -95,9 +103,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "agents",
-      "keywords": ["documentation", "readme", "technical-writing", "agent"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["documentation", "readme", "technical-writing", "agent"],
+      "category": "agents",
       "agents": ["./documentation-manager.md"],
       "strict": false
     },
@@ -110,24 +120,28 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "agents",
-      "keywords": ["testing", "validation", "quality", "agent"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["testing", "validation", "quality", "agent"],
+      "category": "agents",
       "agents": ["./validation-gates.md"],
       "strict": false
     },
     {
       "name": "tool-usage-logger",
-      "source": "./hooks/tool-logger",
+      "source": "./tool-logger",
       "description": "PostToolUse hook that logs all tool usage for tracking and debugging purposes",
       "version": "1.0.0",
       "author": {
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "monitoring",
-      "keywords": ["logging", "monitoring", "debugging", "hook"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["logging", "monitoring", "debugging", "hook"],
+      "category": "monitoring",
       "hooks": {
         "PostToolUse": [
           {
@@ -152,9 +166,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "mcp-servers",
-      "keywords": ["mcp", "fetch", "time", "ide"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["mcp", "fetch", "time", "ide"],
+      "category": "mcp-servers",
       "mcpServers": {
         "fetch": {
           "command": "uvx",
@@ -180,9 +196,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "mcp-servers",
-      "keywords": ["mcp", "ai", "planning", "gemini"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["mcp", "ai", "planning", "gemini"],
+      "category": "mcp-servers",
       "mcpServers": {
         "serena": {
           "type": "stdio",
@@ -219,9 +237,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "mcp-servers",
-      "keywords": ["mcp", "data", "api", "weather", "crypto", "stocks"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["mcp", "data", "api", "weather", "crypto", "stocks"],
+      "category": "mcp-servers",
       "mcpServers": {
         "open-meteo": {
           "command": "npx",
@@ -307,9 +327,11 @@
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
       },
-      "category": "mcp-servers",
-      "keywords": ["mcp", "devtools", "automation", "network"],
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "repository": "https://github.com/henkisdabro/claudecode-marketplace",
       "license": "MIT",
+      "keywords": ["mcp", "devtools", "automation", "network"],
+      "category": "mcp-servers",
       "mcpServers": {
         "chrome-devtools": {
           "command": "npx",
