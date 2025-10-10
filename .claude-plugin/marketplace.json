@@ -24,11 +24,11 @@
       "keywords": ["utilities", "docker", "containerization", "development"],
       "license": "MIT",
       "commands": [
-        "${CLAUDE_PLUGIN_ROOT}/commands/containerize.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/prompt_writer.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/primer.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/reflection.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/create-agentsmd-symlink.md"
+        "./commands/containerize.md",
+        "./commands/prompt_writer.md",
+        "./commands/primer.md",
+        "./commands/reflection.md",
+        "./commands/create-agentsmd-symlink.md"
       ],
       "strict": false
     },
@@ -45,11 +45,11 @@
       "keywords": ["planning", "thinking", "problem-solving", "analysis"],
       "license": "MIT",
       "commands": [
-        "${CLAUDE_PLUGIN_ROOT}/commands/planning.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/ultra-think.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/generate-prp.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/execute-prp.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/infinite.md"
+        "./commands/planning.md",
+        "./commands/ultra-think.md",
+        "./commands/generate-prp.md",
+        "./commands/execute-prp.md",
+        "./commands/infinite.md"
       ],
       "strict": false
     },
@@ -66,8 +66,8 @@
       "keywords": ["parallel", "execution", "performance", "efficiency"],
       "license": "MIT",
       "commands": [
-        "${CLAUDE_PLUGIN_ROOT}/commands/prep-parallel.md",
-        "${CLAUDE_PLUGIN_ROOT}/commands/execute-parallel.md"
+        "./commands/prep-parallel.md",
+        "./commands/execute-parallel.md"
       ],
       "strict": false
     },
@@ -83,7 +83,7 @@
       "category": "agents",
       "keywords": ["fullstack", "development", "react", "nodejs", "database", "agent"],
       "license": "MIT",
-      "agents": ["${CLAUDE_PLUGIN_ROOT}/fullstack-developer.md"],
+      "agents": ["./fullstack-developer.md"],
       "strict": false
     },
     {
@@ -98,7 +98,7 @@
       "category": "agents",
       "keywords": ["documentation", "readme", "technical-writing", "agent"],
       "license": "MIT",
-      "agents": ["${CLAUDE_PLUGIN_ROOT}/documentation-manager.md"],
+      "agents": ["./documentation-manager.md"],
       "strict": false
     },
     {
@@ -113,7 +113,7 @@
       "category": "agents",
       "keywords": ["testing", "validation", "quality", "agent"],
       "license": "MIT",
-      "agents": ["${CLAUDE_PLUGIN_ROOT}/validation-gates.md"],
+      "agents": ["./validation-gates.md"],
       "strict": false
     },
     {
@@ -135,7 +135,7 @@
             "hooks": [
               {
                 "type": "command",
-                "command": "${CLAUDE_PLUGIN_ROOT}/log-tool-usage.sh"
+                "command": "./log-tool-usage.sh"
               }
             ]
           }
