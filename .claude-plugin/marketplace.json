@@ -13,7 +13,7 @@
     {
       "name": "essential-toolkit",
       "source": "./",
-      "description": "Essential commands and agents for all types of work in Claude Code - includes planning tools, development utilities, documentation management, and AI thinking helpers",
+      "description": "commands, agents for all Claude Code work",
       "keywords": ["essential", "productivity", "agents", "planning", "development", "workflows", "automation", "toolkit"]
     },
     {
