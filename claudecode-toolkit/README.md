@@ -4,6 +4,9 @@ Meta toolkit for working with Claude Code itself - create and improve skills.
 
 ## What's Included
 
+### Hooks (1)
+- **skill-activation-prompt** - Automatically suggests relevant skills based on user prompts and file context
+
 ### Skills (1)
 - **skill-creator** - Comprehensive guide for creating effective skills that extend Claude's capabilities
 
@@ -14,6 +17,40 @@ Meta toolkit for working with Claude Code itself - create and improve skills.
 ```
 
 ## Usage
+
+### Using skill-activation-prompt Hook
+
+This hook enables automatic skill suggestions based on your work:
+
+1. Copy the hook files to your project:
+```bash
+cp claudecode-toolkit/hooks/skill-activation-prompt/skill-activation-prompt.* .claude/hooks/
+chmod +x .claude/hooks/skill-activation-prompt.sh
+```
+
+2. Install dependencies:
+```bash
+cd .claude/hooks
+npm install
+```
+
+3. Add to `.claude/settings.json`:
+```json
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/skill-activation-prompt.sh"
+      }
+    ]
+  }
+}
+```
+
+See `hooks/skill-activation-prompt/README.md` for detailed setup instructions.
+
+### Creating New Skills
 
 This toolkit helps you create new skills for Claude Code.
 

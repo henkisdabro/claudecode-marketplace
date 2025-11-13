@@ -1,0 +1,15 @@
+{
+  "name": "skill-activation-prompt-hook",
+  "version": "1.0.0",
+  "description": "Claude Code hook that automatically suggests relevant skills based on user prompts and file context",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
