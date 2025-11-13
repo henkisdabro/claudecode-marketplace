@@ -2,7 +2,7 @@
 
 **Version 3.0** - Thematic Toolkits Architecture
 
-A comprehensive marketplace for [Claude Code](https://claude.ai/code) providing specialized toolkits for productivity, development, documents, analytics, and AI integrations.
+A comprehensive marketplace for [Claude Code](https://claude.ai/code) providing specialized toolkits for productivity, development, documents, analytics, e-commerce, and AI integrations - now featuring complete GTM, GA4, Shopify, and Google Automation suites!
 
 ## 🚀 Quick Start
 
@@ -23,6 +23,18 @@ Then install the toolkits you need:
 
 # For document processing
 /plugin install documents-toolkit@wookstar
+
+# For Google Tag Manager expertise
+/plugin install gtm-suite@wookstar
+
+# For Google Analytics 4 expertise
+/plugin install ga-suite@wookstar
+
+# For Shopify development
+/plugin install shopify-developer@wookstar
+
+# For Google Workspace & Ads automation
+/plugin install google-apps-ads-script@wookstar
 ```
 
 ## 📦 What's New in V3.0
@@ -31,7 +43,13 @@ Then install the toolkits you need:
 
 **Better Organization**: Install complete toolsets in one command instead of managing dozens of individual plugins.
 
-**Clear Categories**: Productivity, Development, Documents, Analytics, Finance, AI, and more.
+**Clear Categories**: Productivity, Development, Documents, Analytics, E-commerce, Automation, Finance, AI, and more.
+
+**New Production Suites**:
+- ✨ **GTM Suite** - 10 specialized Google Tag Manager skills
+- ✨ **GA Suite** - 15 comprehensive Google Analytics 4 skills
+- ✨ **Shopify Developer** - 6 professional Shopify development skills
+- ✨ **Google Apps & Ads Script** - 2 automation skills for Workspace and Ads
 
 See [MIGRATION_V3.md](./MIGRATION_V3.md) for complete migration details from v2.x.
 
@@ -150,23 +168,89 @@ PERPLEXITY_API_KEY=your_key
 
 ---
 
-### 📊 Analytics Suites (Coming Soon)
+### 📊 GTM Suite ✨ NEW!
+**Complete Google Tag Manager expertise (v1.0.0 - Production Ready)**
 
-#### GTM Suite (v0.1.0 - Placeholder)
-**Google Tag Manager toolkit**
+**Includes:**
+- 10 specialized skills covering all aspects of GTM
 
-Structure ready for:
-- GTM specialist agents
-- GTM commands (/gtm-init, /gtm-audit, etc.)
-- GTM skills (event tracking, container management, etc.)
+**Skills:** gtm-general (fundamentals), gtm-setup, gtm-tags, gtm-triggers, gtm-variables, gtm-datalayer, gtm-debugging, gtm-best-practices, gtm-custom-templates, gtm-api
 
-#### GA Suite (v0.1.0 - Placeholder)
-**Google Analytics 4 toolkit**
+**Installation:**
+```bash
+/plugin install gtm-suite@wookstar
+```
 
-Structure ready for:
-- GA4 analyst agents
-- GA4 commands (/ga-report, /ga-init, etc.)
-- GA4 skills (reporting, goals, conversions, etc.)
+**Use Cases:** GTM implementation, data layer architecture, debugging, SPA tracking, e-commerce tracking, custom templates, API automation
+
+**Perfect for:** Digital marketers, analytics engineers, web developers implementing tracking
+
+[View Full GTM Suite Documentation](./gtm-suite/README.md)
+
+---
+
+### 📈 GA Suite ✨ NEW!
+**Comprehensive Google Analytics 4 expertise (v1.0.0 - Production Ready)**
+
+**Includes:**
+- 15 specialized skills organized into 5 progressive tiers
+
+**Skills:** ga4-setup, ga4-events-fundamentals, ga4-gtag-implementation, ga4-recommended-events, ga4-custom-events, ga4-user-tracking, ga4-custom-dimensions, ga4-audiences, ga4-debugview, ga4-gtm-integration, ga4-measurement-protocol, ga4-privacy-compliance, ga4-reporting, ga4-bigquery, ga4-data-management
+
+**Installation:**
+```bash
+/plugin install ga-suite@wookstar
+```
+
+**Use Cases:** GA4 implementation, e-commerce tracking, BigQuery analysis, privacy compliance (GDPR/Consent Mode v2), server-side tracking, custom reporting
+
+**Perfect for:** Data analysts, marketing teams, analytics engineers, enterprise analytics
+
+[View Full GA Suite Documentation](./ga-suite/README.md)
+
+---
+
+### 🛍️ Shopify Developer ✨ NEW!
+**Professional Shopify development toolkit (v1.0.0 - Production Ready)**
+
+**Includes:**
+- 6 specialized skills for Shopify development
+
+**Skills:** shopify-liquid (templating), shopify-theme-dev, shopify-api (GraphQL/REST), shopify-app-dev, shopify-performance, shopify-debugging
+
+**Installation:**
+```bash
+/plugin install shopify-developer@wookstar
+```
+
+**Use Cases:** Custom theme development, Liquid templating, headless storefronts, custom app development, performance optimization, API integration
+
+**Perfect for:** Shopify developers, e-commerce agencies, theme customizers, app developers
+
+[View Full Shopify Developer Documentation](./shopify-developer/README.md)
+
+---
+
+### 🔄 Google Apps & Ads Script ✨ NEW!
+**Automation toolkit for Workspace and Ads (v1.0.0 - Production Ready)**
+
+**Includes:**
+- 2 comprehensive automation skills
+
+**Skills:** google-apps-script (Workspace automation), google-ads-scripts (campaign automation)
+
+**Installation:**
+```bash
+/plugin install google-apps-ads-script@wookstar
+```
+
+**Use Cases:**
+- **Apps Script:** Sheets automation, Gmail automation, Drive management, Calendar automation, Document generation, Workspace add-ons
+- **Ads Scripts:** Campaign automation, bidding strategies, performance reports, keyword management, automated alerts
+
+**Perfect for:** Marketing automation engineers, data analysts, PPC managers, Workspace power users
+
+[View Full Google Apps & Ads Script Documentation](./google-apps-ads-script/README.md)
 
 ---
 
@@ -214,6 +298,70 @@ Standalone integrations available separately:
 "Generate a commit message for these changes"
 ```
 
+### Google Tag Manager Implementation
+
+```bash
+# Get GTM fundamentals
+"Explain how GTM data layer works for SPAs"
+
+# Setup guidance
+"Help me install GTM on my React website"
+
+# Debug tracking
+"My form submission tag isn't firing, help me debug"
+
+# E-commerce tracking
+"Implement GA4 e-commerce tracking via GTM"
+```
+
+### Google Analytics 4 Setup
+
+```bash
+# Initial setup
+"Help me create a GA4 property and install tracking"
+
+# E-commerce tracking
+"Implement purchase event tracking for my checkout"
+
+# BigQuery analysis
+"Write SQL to analyze GA4 conversion funnels in BigQuery"
+
+# Privacy compliance
+"Implement Google Consent Mode v2 for GDPR"
+```
+
+### Shopify Development
+
+```bash
+# Liquid templating
+"Create a Shopify product card with Liquid"
+
+# Theme development
+"Build a custom collection page with filtering"
+
+# API integration
+"Use Storefront API to build a headless checkout"
+
+# Performance optimization
+"Optimize my Shopify theme for Core Web Vitals"
+```
+
+### Google Workspace Automation
+
+```bash
+# Sheets automation
+"Create an automated weekly report that emails stakeholders"
+
+# Gmail automation
+"Build an auto-responder for specific email addresses"
+
+# Google Ads Scripts
+"Write a script to pause low-performing keywords automatically"
+
+# Document generation
+"Generate personalized contracts from a template"
+```
+
 ### Document Processing
 
 ```bash
@@ -244,7 +392,14 @@ Standalone integrations available separately:
 
 - **[CLAUDE.md](./CLAUDE.md)** - Developer guide for working with this marketplace
 - **[MIGRATION_V3.md](./MIGRATION_V3.md)** - Migration guide from v2.x
-- **[Toolkit READMEs](./productivity-toolkit/README.md)** - Detailed docs for each toolkit
+- **Toolkit READMEs** - Detailed documentation for each toolkit:
+  - [GTM Suite](./gtm-suite/README.md)
+  - [GA Suite](./ga-suite/README.md)
+  - [Shopify Developer](./shopify-developer/README.md)
+  - [Google Apps & Ads Script](./google-apps-ads-script/README.md)
+  - [Productivity Toolkit](./productivity-toolkit/README.md)
+  - [Developer Toolkit](./developer-toolkit/README.md)
+  - [Documents Toolkit](./documents-toolkit/README.md)
 
 ---
 
@@ -264,7 +419,9 @@ Configure automatic installation in your repository's `.claude/settings.json`:
   },
   "enabledPlugins": [
     "productivity-toolkit@wookstar",
-    "developer-toolkit@wookstar"
+    "developer-toolkit@wookstar",
+    "gtm-suite@wookstar",
+    "ga-suite@wookstar"
   ]
 }
 ```
@@ -295,23 +452,23 @@ cd claudecode-marketplace
 /plugin marketplace update wookstar
 ```
 
-### Adding to GTM or GA Suites
+### Contributing to Suites
 
-The GTM and GA suites are placeholder structures ready for content:
+All suites are now ready for community contributions:
 
 ```bash
-# Navigate to the suite
-cd gtm-suite
+# Navigate to a suite
+cd gtm-suite  # or ga-suite, shopify-developer, etc.
 
-# Add agents
-vi agents/gtm-specialist.md
+# Add agents (if suite supports agents)
+vi agents/new-agent.md
 
-# Add commands
-vi commands/gtm-init.md
+# Add commands (if suite supports commands)
+vi commands/new-command.md
 
 # Add skills
-mkdir skills/event-tracking
-vi skills/event-tracking/SKILL.md
+mkdir skills/new-skill
+vi skills/new-skill/SKILL.md
 
 # See suite READMEs for detailed structure guidance
 ```
@@ -321,9 +478,10 @@ vi skills/event-tracking/SKILL.md
 ## 📊 Marketplace Stats
 
 - **Version:** 3.0.0
-- **Total Plugins:** 15 (8 toolkits + 7 individual MCPs)
-- **Components:** 3 agents, 11 commands, 8 skills, 18 MCP servers
-- **Categories:** Productivity, Development, Documents, Meta, Finance, AI, Analytics
+- **Total Plugins:** 17 (10 toolkits + 7 individual MCPs)
+- **Components:** 3 agents, 11 commands, 41 skills, 18 MCP servers
+- **Categories:** Productivity, Development, Documents, Meta, Finance, AI, Analytics, E-commerce, Automation
+- **New in v3.0:** GTM Suite (10 skills), GA Suite (15 skills), Shopify Developer (6 skills), Google Apps & Ads Script (2 skills)
 
 ---
 
@@ -343,7 +501,11 @@ MIT License - see [LICENSE](./LICENSE) for details
 
 ## 🙏 Acknowledgments
 
-Built for the Claude Code community. Special thanks to Anthropic for creating Claude Code and the plugin system that makes this marketplace possible.
+Built for the Claude Code community. Special thanks to:
+- Anthropic for creating Claude Code and the plugin system
+- [Simo Ahava](https://www.simoahava.com/) for GTM and GA4 expertise
+- The open-source community for MCP server integrations
+- All contributors to this marketplace
 
 ---
 

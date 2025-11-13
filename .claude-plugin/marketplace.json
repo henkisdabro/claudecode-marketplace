@@ -5,7 +5,7 @@
     "email": "whom-wealthy.2z@icloud.com"
   },
   "metadata": {
-    "description": "Comprehensive Claude Code marketplace with specialized toolkits for productivity, development, analytics, documents, and AI integrations",
+    "description": "Comprehensive Claude Code marketplace with specialized toolkits for productivity, development, analytics, documents, e-commerce, and AI integrations - now featuring complete GTM, GA4, Shopify, and Google Automation suites",
     "version": "3.0.0",
     "homepage": "https://github.com/henkisdabro/claudecode-marketplace"
   },
@@ -149,8 +149,8 @@
     {
       "name": "gtm-suite",
       "source": "./gtm-suite",
-      "description": "Complete Google Tag Manager suite with specialized agents, commands, skills, and MCP integrations (COMING SOON - placeholder structure ready for your additions)",
-      "version": "0.1.0",
+      "description": "Complete Google Tag Manager suite with 10 specialized skills covering setup, configuration, implementation, debugging, and best practices. Includes GTM fundamentals, tags, triggers, variables, data layer architecture, debugging tools, custom templates, and API automation for comprehensive GTM mastery.",
+      "version": "1.0.0",
       "author": {
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
@@ -162,9 +162,13 @@
         "tracking",
         "analytics",
         "tags",
+        "triggers",
+        "variables",
+        "datalayer",
         "containers",
         "events",
-        "marketing"
+        "marketing",
+        "debugging"
       ],
       "category": "analytics",
       "strict": false
@@ -172,8 +176,8 @@
     {
       "name": "ga-suite",
       "source": "./ga-suite",
-      "description": "Comprehensive Google Analytics 4 suite with specialized agents, commands, skills, and MCP integrations (COMING SOON - placeholder structure ready for your additions)",
-      "version": "0.1.0",
+      "description": "Comprehensive Google Analytics 4 suite with 15 specialized skills covering complete GA4 implementation from property setup to BigQuery integration. Includes events, user tracking, e-commerce, custom dimensions, audiences, privacy compliance, reporting, Measurement Protocol, and GTM integration for full GA4 expertise.",
+      "version": "1.0.0",
       "author": {
         "name": "Henrik Soederlund",
         "email": "whom-wealthy.2z@icloud.com"
@@ -187,9 +191,68 @@
         "reporting",
         "metrics",
         "conversions",
-        "audiences"
+        "audiences",
+        "events",
+        "ecommerce",
+        "bigquery",
+        "measurement-protocol",
+        "gtm"
       ],
       "category": "analytics",
+      "strict": false
+    },
+    {
+      "name": "shopify-developer",
+      "source": "./shopify-developer",
+      "description": "Professional Shopify development toolkit with 6 specialized skills covering Liquid templating, theme development, API integration (GraphQL/REST), custom app development, performance optimization, and debugging. Complete solution for building custom themes, headless storefronts, and Shopify apps.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Henrik Soederlund",
+        "email": "whom-wealthy.2z@icloud.com"
+      },
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "keywords": [
+        "shopify",
+        "liquid",
+        "ecommerce",
+        "theme",
+        "development",
+        "api",
+        "graphql",
+        "rest",
+        "app-development",
+        "performance",
+        "debugging",
+        "storefront"
+      ],
+      "category": "development",
+      "strict": false
+    },
+    {
+      "name": "google-apps-ads-script",
+      "source": "./google-apps-ads-script",
+      "description": "Comprehensive automation toolkit with 2 specialized skills: Google Apps Script for Workspace automation (Sheets, Docs, Gmail, Drive, Calendar) and Google Ads Scripts for campaign automation, bidding strategies, and reporting. Perfect for marketers and automation engineers.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Henrik Soederlund",
+        "email": "whom-wealthy.2z@icloud.com"
+      },
+      "homepage": "https://github.com/henkisdabro/claudecode-marketplace",
+      "keywords": [
+        "google-apps-script",
+        "google-ads-scripts",
+        "automation",
+        "workspace",
+        "sheets",
+        "gmail",
+        "drive",
+        "calendar",
+        "ads",
+        "marketing",
+        "reporting",
+        "campaign-management"
+      ],
+      "category": "automation",
       "strict": false
     },
     {

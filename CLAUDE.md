@@ -237,8 +237,10 @@ Each toolkit follows a consistent internal structure:
 - **claudecode-toolkit** (v1.0.0): Meta tools for extending Claude Code
 - **finance-toolkit** (v1.0.0): Financial market data MCPs
 - **ai-toolkit** (v1.0.0): AI integration MCPs (Gemini, Perplexity)
-- **gtm-suite** (v0.1.0): Google Tag Manager tools (PLACEHOLDER)
-- **ga-suite** (v0.1.0): Google Analytics 4 tools (PLACEHOLDER)
+- **gtm-suite** (v1.0.0): Google Tag Manager (10 skills) - PRODUCTION READY
+- **ga-suite** (v1.0.0): Google Analytics 4 (15 skills) - PRODUCTION READY
+- **shopify-developer** (v1.0.0): Shopify development (6 skills) - PRODUCTION READY
+- **google-apps-ads-script** (v1.0.0): Google Workspace & Ads automation (2 skills) - PRODUCTION READY
 
 #### 2. Commands
 
@@ -502,8 +504,8 @@ Follow semantic versioning strictly:
 - **Production toolkits**: v1.0.0 and above
 
 **Version Status:**
-- Production toolkits (v1.0.0): productivity, developer, documents, claudecode, finance, ai
-- Placeholder toolkits (v0.1.0): gtm-suite, ga-suite
+- Production toolkits (v1.0.0): productivity, developer, documents, claudecode, finance, ai, gtm-suite, ga-suite, shopify-developer, google-apps-ads-script
+- All toolkits are now production-ready!
 
 Update versions when:
 1. Adding significant features to a toolkit (MINOR bump)
