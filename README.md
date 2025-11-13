@@ -131,19 +131,20 @@ FIRECRAWL_API_KEY=your_key         # Optional
 **Real-time market data**
 
 **Includes:**
-- 2 MCP servers: AlphaVantage (stocks), CoinGecko (crypto)
+- 3 MCP servers: AlphaVantage (stocks), CoinGecko (crypto), Currency Conversion
 
 **Installation:**
 ```bash
 /plugin install finance-toolkit@wookstar
 ```
 
-**Use Cases:** Stock prices, cryptocurrency data, financial analysis
+**Use Cases:** Stock prices, cryptocurrency data, currency exchange rates, financial analysis
 
 **Required Environment Variables:**
 ```bash
 ALPHAVANTAGEAPIKEY=your_key
 COINGECKO_DEMO_API_KEY=your_key
+# Note: Currency conversion requires no API key
 ```
 
 ---
@@ -259,7 +260,6 @@ PERPLEXITY_API_KEY=your_key
 Standalone integrations available separately:
 
 ```bash
-/plugin install mcp-currency-conversion@wookstar  # Currency exchange
 /plugin install mcp-fetch@wookstar                # Web fetching
 /plugin install mcp-google-workspace@wookstar     # Gmail, Drive, Calendar
 /plugin install mcp-mikrotik@wookstar             # Router management
@@ -478,10 +478,10 @@ vi skills/new-skill/SKILL.md
 ## 📊 Marketplace Stats
 
 - **Version:** 3.0.0
-- **Total Plugins:** 17 (10 toolkits + 7 individual MCPs)
-- **Components:** 3 agents, 11 commands, 41 skills, 18 MCP servers
+- **Total Plugins:** 16 (10 toolkits + 6 individual MCPs)
+- **Components:** 3 agents, 11 commands, 41 skills, 20 MCP servers
 - **Categories:** Productivity, Development, Documents, Meta, Finance, AI, Analytics, E-commerce, Automation
-- **New in v3.0:** GTM Suite (10 skills), GA Suite (15 skills), Shopify Developer (6 skills), Google Apps & Ads Script (2 skills)
+- **New in v3.0:** GTM Suite (10 skills + 1 MCP), GA Suite (15 skills + 1 MCP), Shopify Developer (6 skills), Google Apps & Ads Script (2 skills)
 
 ---
 

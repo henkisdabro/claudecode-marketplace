@@ -283,13 +283,14 @@ Standalone MCP server plugins for general-purpose integrations.
 **Installation:** `/plugin install mcp-<server-name>@wookstar`
 
 **Available Individual MCPs:**
-- **mcp-currency-conversion**: Currency exchange rates
 - **mcp-fetch**: Web content fetching
 - **mcp-google-workspace**: Gmail, Drive, Calendar integration
 - **mcp-mikrotik**: Router management
 - **mcp-n8n**: Workflow automation
 - **mcp-notion**: Workspace integration
 - **mcp-open-meteo**: Weather data (no API key required)
+
+**Note:** Currency conversion MCP is now part of the finance-toolkit (3 MCPs total: AlphaVantage, CoinGecko, Currency Conversion).
 
 ### Critical Files
 

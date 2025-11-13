@@ -35,5 +35,4 @@ lerna-debug.log*
 *.temp
 
 # Claude Code Files
-.mcp.json
 .claude

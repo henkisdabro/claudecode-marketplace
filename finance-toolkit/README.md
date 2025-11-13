@@ -4,9 +4,10 @@ Real-time financial market data for stocks and cryptocurrencies.
 
 ## What's Included
 
-### MCP Servers (2)
+### MCP Servers (3)
 - **alphavantage** - Stock market data, company information, financial indicators
 - **coingecko** - Cryptocurrency prices, market data, historical trends
+- **currency-conversion** - Real-time currency exchange rates and conversion (no API key required)
 
 ## Installation
 
